@@ -12,8 +12,6 @@ npm install
 
 ## Запуск проекта
 
-Для запуска
-
 ```sh
 npm run dev
 ```
