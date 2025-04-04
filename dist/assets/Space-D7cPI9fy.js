@@ -1,0 +1,1 @@
+import{d as e,o,a,f as s,e as t}from"./index-C4ToBwsk.js";import{_ as n}from"./Header.vue_vue_type_script_setup_true_lang-r5o75XeZ.js";import"./icon-C_ayXK1h.js";const i=e({__name:"Space",setup(c){return o(()=>{document.body.classList.add("space-page")}),a(()=>{document.body.classList.remove("space-page")}),(p,m)=>(t(),s(n))}});export{i as default};

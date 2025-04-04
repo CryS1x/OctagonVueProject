@@ -1,0 +1,19 @@
+body.space-page {
+    margin: 0;
+}
+
+.spaces-page {
+    margin: 0 0 0 40px;
+    padding: 20px;
+}
+
+.spaces-list {
+    display: flex;
+    flex-direction: column; /* Карточки друг за другом */
+    gap: 10px; /* Расстояние между карточками */
+}
+
+.people-page-calendar-2 {
+    margin-top: -794px;
+    margin-left: 1440px;
+}

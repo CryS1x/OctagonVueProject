@@ -1,0 +1,235 @@
+body.people-page {
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.people-page-container {
+    margin: 0 0 0 70px;
+    width: 1400px;
+    height: 800px;
+}
+
+.add-button-container {
+    position: relative;
+    display: flex;
+    margin: 0 0 0 920px;
+}
+
+.add-button {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    border: none;
+    background: #f2f2f2;
+    height: 35px;
+    width: 110px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: left;
+    position: relative;
+}
+
+.add-button::after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #333;
+}
+
+.people-page-calendar {
+    margin-top: -795px;
+    margin-left: 1430px;
+}
+
+.add-button:hover {
+    outline: #c4c4c4 1px solid;
+}
+
+.people-select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 20px;
+    width: 160px;
+}
+
+.people-select-select {
+    width: 100%;
+    border: none;
+    background: #f2f2f2;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 12px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px;
+}
+
+.people-select-select:focus {
+    outline: #c4c4c4 1px solid;
+}
+
+.people-select-container::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('./images/VectorDown.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.people-select-select:focus ~ .people-select-container::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.people-search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.search-icon {
+    position: absolute;
+    left: 140px;
+    color: #bebebe;
+    pointer-events: none;
+}
+
+.search-input {
+    width: 160px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    padding: 0 0 0 10px;
+    border: none;
+    background: #f2f2f2;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 12px;
+}
+
+.search-input::selection {
+    background: #e1e1e1;
+}
+
+.search-input:focus {
+    outline: #c4c4c4 1px solid;
+}
+
+.search-input::placeholder {
+    color: #bebebe;
+}
+
+.people-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.active-invitations-section {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.section-title {
+    width: 350px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.invitations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Стили для модального окна */
+.modal-overlay-error {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-error {
+    font-family: "Nunito Sans", sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 100px;
+    padding: 15px;
+    text-align: center;
+}
+
+.modal-header-error {
+    margin-top: -20px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.modal-title-error {
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+}
+
+.modal-content-error {
+    margin-bottom: 25px;
+}
+
+.modal-text-error {
+    font-size: 13px;
+    color: #666;
+}
+
+.modal-actions-error {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-button-error {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    margin-top: -5px;
+    padding: 6px 12px;
+    width: 100%;
+    background: #43716b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-button-error:hover {
+    background: #2c4945;
+}
+
